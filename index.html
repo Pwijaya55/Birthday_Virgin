@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Player - Virgin Zalva Salsabila</title>
+    <title>Virgin Zalva Salsabila</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
     <style>
@@ -26,30 +26,31 @@
         .player-container {
             background: rgba(0, 0, 0, 0.493);
             backdrop-filter: blur(20px);
-            border-radius: 20px;
-            padding: 40px;
+            border-radius: 50px;
+            padding: 45px;
             max-width: 400px;
             width: 100%;
-            box-shadow: 0 25px 50px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 50px rgba(73, 73, 73, 0.315);
             text-align: center;
         }
 
         .cover-art {
-            width: 280px;
+            width: 310px;
             height: 280px;
-            border-radius: 16px;
+            border-radius: 20px;
             margin: 0 auto 30px;
             object-fit: cover;
-            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
-            transition: opacity 0.3s ease;
+            box-shadow: 0 10px 30px rgba(17, 145, 0, 0.253);
+            transition: opacity 0.5s ease;
             cursor: pointer;
+            margin-bottom: 10px;
         }
 
         .track-title {
             font-size: 32px;
             font-weight: 800;
             color: #ffffff;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             letter-spacing: -0.5px;
         }
 
@@ -62,7 +63,7 @@
 
         .progress-container {
             position: relative;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         .progress-bar {
@@ -104,7 +105,7 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 12px;
-            font-size: 14px;
+            font-size: 12px;
             color: #ffffff;
             font-weight: 500;
         }
@@ -113,14 +114,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 300px;
+            max-width: 400px;
             margin: 0 auto 40px;
+            margin-bottom:20px;
         }
 
         .control-btn {
             width: 48px;
             height: 48px;
-            border-radius: 50%;
+            border-radius:50%;
             background: #3a3a3a;
             color: rgb(255, 255, 255);
             border: none;
@@ -128,8 +130,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 18px;
-            transition: all 0.2s ease;
+            font-size: 20px;
+            transition: all 0.5s ease;
+        
         }
 
         .control-btn:hover {
@@ -140,14 +143,15 @@
         .play-btn {
             width: 72px;
             height: 72px;
-            font-size: 24px;
+            font-size: 30px;
         }
 
         .bottom-controls {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom:40px;
+            margin: 0 auto 40px;
         }
 
         .bottom-control {
@@ -155,6 +159,9 @@
             font-size: 20px;
             cursor: pointer;
             transition: color 0.2s ease;
+            margin-left: 4.5%;
+            margin-bottom: -5%;
+            
         }
 
         .bottom-control:hover {
@@ -164,7 +171,9 @@
         .volume-container {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
+            margin-right: 4.5%;
+            margin-bottom: -5%;
         }
 
         .volume-slider {
@@ -175,6 +184,7 @@
             outline: none;
             cursor: pointer;
             -webkit-appearance: none;
+            margin-bottom: -5%;
         }
 
         .volume-slider::-webkit-slider-thumb {
@@ -186,58 +196,17 @@
             cursor: pointer;
         }
 
-        .spotify-bar {
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            border: 1px solid #E5E7EB;
-            margin-bottom: 25px;
-        }
-
-        .spotify-logo {
-            width: 24px;
-            height: 24px;
-            background: #fcfcfc;
-            border-radius: 4px;
-            position: relative;
-        }
-
-        .spotify-logo::before {
-            content: '';
-            position: absolute;
-            width: 4px;
-            height: 16px;
-            background: #fff;
-            border-radius: 2px;
-            top: 4px;
-            left: 4px;
-        }
-
-        .spotify-logo::after {
-            content: '';
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            border: 2px solid #353535;
-            border-radius: 50%;
-            top: 6px;
-            right: 4px;
-        }
-
         .soundwave {
             display: flex;
             align-items: end;
-            gap: 2px;
-            height: 24px;
+            gap: 5px;
+            height: 30px;
             flex: 1;
         }
 
         .wave-bar {
             background: #ffffff;
-            border-radius: 2px;
+            border-radius: 5px;
             transition: height 0.1s ease;
         }
 
@@ -447,7 +416,7 @@
 <body>
     <div class="player-container" id="player">
         <!-- 🔥 SLIDESHOW FOTO MULAI DARI SINI 🔥 -->
-        <img src="https://files.catbox.moe/uh0sjp.jpeg" alt="Virgin Zalva Salsabila" class="cover-art" id="coverArt">
+        <img src="https://i.postimg.cc/dQzH3bT5/Whats-App-Image-2026-04-04-at-13-56-46.jpg" alt="Virgin Zalva Salsabila" class="cover-art" id="coverArt">
         
         <h1 class="track-title">Happy Birthday!</h1>
         <p class="artist-name">Virgin Zalva Salsabila</p>
@@ -504,19 +473,22 @@
     <div id="messageModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2 style="font-family: 'Pattaya', cursive; font-size: 2.5rem; color: #ffffff; margin-bottom: 20px;"> Pesan buat kamu </h2>
+            <h2 style="font-family: 'Pattaya', cursive; font-size: 2.5rem; color: #ffffffee; margin-bottom: 20px;"> Pesan dari aku </h2>
             <div class="prayers">
                 <div class="prayer">
-                    🎂 Selamat ulang tahun Virgin Zalva Salsabila! Semoga tahun ini penuh dengan kebahagiaan, cinta, dan berkah yang melimpah. Tetap menjadi bunga lily yang ku kenal ya! 💖
+                    🎂 Selamat ulang tahun Virgin Zalva Salsabila! Semoga tahun ini penuh dengan kebahagiaan, cinta, dan berkah yang banyak. 
+                </div>
+                <div class="prayer">
+                    ✨ Semoga tahun ini penuh dengan kebahagiaan, cinta, dan berkah yang banyak. 
                 </div>
                 <div class="prayer">
                     🌸 Semoga Apa yang kamu ceritain ke aku cepet terkabul dan di mudahkan jalannya yaa. Aamiin! 🤲
                 </div>
                 <div class="prayer">
-                    🎈 Tetaplah menjadi dirimu yang imut, ceria, dan penuh semangat! Seperti Bunga Lily yang kamu suka yaa.✨
+                    🎈 Tetap menjadi orang yang ku kenal yaa!.
                 </div>
                 <div class="prayer">
-                     Nanti jadi nonton kan kita? hehe .
+                     Ayoo kita main lagi buat ke sekian kalinya, kalo kamu gak sibuk tapi :" hehe
                 </div>
             </div>
         </div>
@@ -557,11 +529,11 @@
     document.addEventListener('DOMContentLoaded', function() {
         // Daftar foto (TAMBAHKAN PHOTO KAMU DI SINI)
         const photos = [
-            'https://files.catbox.moe/zvt5tk.jpeg',
-            'https://files.catbox.moe/vf0e5l.jpeg', 
-            'https://files.catbox.moe/mag1fw.jpeg',
-            'https://files.catbox.moe/upmxp8.jpeg',
-            'https://files.catbox.moe/uh0sjp.jpeg'
+            'https://i.postimg.cc/dQzH3bT5/Whats-App-Image-2026-04-04-at-13-56-46.jpg',
+            'https://i.postimg.cc/3RzByGWT/Whats-App-Image-2026-04-04-at-13-56-15.jpg', 
+            'https://i.postimg.cc/zGqkR8Dz/Whats-App-Image-2026-04-04-at-13-56-39.jpg',
+            'https://i.postimg.cc/bvJH3gtZ/Whats-App-Image-2026-04-04-at-13-56-24.jpg',
+            'https://i.postimg.cc/wxJ5f77x/Whats-App-Image-2026-04-04-at-13-56-31.jpg'
         ];
 
         const coverArt = document.getElementById('coverArt');
@@ -583,7 +555,7 @@
         // Mulai slideshow
         function startSlideshow() {
             if (slideInterval) clearInterval(slideInterval);
-            slideInterval = setInterval(nextPhoto, 3000); // Ganti foto setiap 3 detik
+            slideInterval = setInterval(nextPhoto, 4000); // Ganti foto setiap 3 detik
         }
 
         // Pause slideshow saat hover
